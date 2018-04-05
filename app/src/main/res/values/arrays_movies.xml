@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="movie00">
+        <item>Anihilacja</item>
+        <item>Horror</item>
+    </string-array>
+
+    <string-array name="movie01">
+        <item>Baby Driver</item>
+        <item>Comedy</item>
+    </string-array>
+
+    <string-array name="movie02">
+        <item>Black Panther</item>
+        <item>Action</item>
+    </string-array>
+
+    <string-array name="movie03">
+        <item>John Wick 2</item>
+        <item>Thriller</item>
+    </string-array>
+
+    <string-array name="movie04">
+        <item>Kong Wyspa Czaszki</item>
+        <item>Sci-Fi</item>
+    </string-array>
+
+    <string-array name="movie05">
+        <item>Logan</item>
+        <item>Action</item>
+    </string-array>
+
+    <string-array name="movie06">
+        <item>Thor:The Ragnarok</item>
+        <item>Action</item>
+    </string-array>
+
+    <string-array name="movie07">
+        <item>Wonder Woman</item>
+        <item>Action</item>
+    </string-array>
+
+    <string-array name="movie08">
+        <item>Some</item>
+        <item>Action</item>
+    </string-array>
+
+    <string-array name="movie09">
+        <item>Some</item>
+        <item>Action</item>
+    </string-array>
+
+    <string-array name="actors00">
+        <item>Thor:The Ragnarok</item>
+        <item>Action</item>
+    </string-array>
+
+    <string-array name="actors01">
+        <item>Thor:The Ragnarok</item>
+        <item>Action</item>
+    </string-array>
+
+    <string-array name="actors02">
+        <item>Thor:The Ragnarok</item>
+        <item>Action</item>
+    </string-array>
+
+    <string-array name="actors03">
+        <item>Thor:The Ragnarok</item>
+        <item>Action</item>
+    </string-array>
+
+    <string-array name="actors04">
+        <item>Thor:The Ragnarok</item>
+        <item>Action</item>
+    </string-array>
+
+    <string-array name="actors05">
+        <item>Thor:The Ragnarok</item>
+        <item>Action</item>
+    </string-array>
+
+    <string-array name="actors06">
+        <item>Thor:The Ragnarok</item>
+        <item>Action</item>
+    </string-array>
+
+    <string-array name="actors07">
+        <item>Thor:The Ragnarok</item>
+        <item>Action</item>
+    </string-array>
+
+    <string-array name="actors08">
+        <item>Thor:The Ragnarok</item>
+        <item>Action</item>
+    </string-array>
+
+    <string-array name="actors09">
+        <item>Thor:The Ragnarok</item>
+        <item>Action</item>
+    </string-array>
+
+</resources>
