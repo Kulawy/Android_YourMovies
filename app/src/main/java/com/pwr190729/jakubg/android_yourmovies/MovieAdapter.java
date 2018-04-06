@@ -22,7 +22,7 @@ import java.util.List;
 public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MyViewHolder>{
 
     private ArrayList<Movie> moviesArrayList;
-    Context context;
+    private Context context;
 
     public MovieAdapter(ArrayList<Movie> moviesArrayList){
         this.moviesArrayList = moviesArrayList;
@@ -32,7 +32,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MyViewHolder
     public class MyViewHolder extends RecyclerView.ViewHolder{
         public TextView title, category;
         public ImageView iconImage;
-        public ConstraintLayout root;
+        public ConstraintLayout root, viewForeground;
 
         public MyViewHolder(View view){
             super(view);
@@ -40,7 +40,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MyViewHolder
             category = (TextView) view.findViewById(R.id.main_categoryText);
             iconImage = (ImageView) view.findViewById(R.id.main_icon);
             root = (ConstraintLayout) view.findViewById(R.id.movie_list_row_root);
-
+            viewForeground = (ConstraintLayout) view.findViewById(R.id.movie_list_row_view_foreground);
         }
     }
 
@@ -61,7 +61,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MyViewHolder
         //Bitmap icon = BitmapFactory.decodeResource(context.getResources(), movie.getImageResourceId());
         holder.iconImage.setImageBitmap( movie.getImageResource());
 
-        holder.root.setBackgroundColor(context.getColor(setColourByPosition(position)));
+        holder.viewForeground.setBackgroundColor(context.getColor(setColourByPosition(position)));
     }
 
     private int setColourByPosition(int pos){
@@ -105,5 +105,15 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MyViewHolder
     }
 
     //używamy viewholdera a viewholder podmienia obiekty
+
+    public void removeItem(int position){
+        moviesArrayList.remove(position);
+        notifyItemRemoved(position);
+    }
+
+    public void restoreItem(Movie movie, int position){
+        moviesArrayList.add(position, movie);
+        notifyItemInserted(position);
+    }
 
 }

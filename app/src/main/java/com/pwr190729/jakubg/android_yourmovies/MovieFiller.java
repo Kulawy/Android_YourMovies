@@ -24,15 +24,13 @@ public class MovieFiller {
     private ArrayList<Integer> imagesList;
     Random rnd = new Random();
 
-    public MovieFiller(Context current){
-        moviesArrayList = new ArrayList<Movie>();
+    public MovieFiller(Context current, ArrayList<Movie> list){
+        moviesArrayList = list;
         imagesList = new ArrayList<Integer>();
         this.context = current;
     }
 
     public ArrayList<Movie> fillTheList(){
-
-
 
         for (int i = 0; i < moviesArrays.length; i++){
 

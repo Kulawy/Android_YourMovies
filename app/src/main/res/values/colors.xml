@@ -9,4 +9,5 @@
     <color name="color_for_1">#f9a8ae</color>
     <color name="color_for_2">#abe7e9</color>
     <color name="color_for_3">#cfb3f7</color>
+    <color name="bgRowBackground">#e60808</color>
 </resources>
