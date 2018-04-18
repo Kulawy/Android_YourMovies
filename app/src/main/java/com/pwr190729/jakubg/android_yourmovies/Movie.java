@@ -2,6 +2,7 @@ package com.pwr190729.jakubg.android_yourmovies;
 
 import android.graphics.Bitmap;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
 /**
@@ -10,19 +11,20 @@ import java.util.ArrayList;
 
 public class Movie {
 
+    private int id;
     private String tittle;
     private String category;
     private Bitmap imageResource;
-    private ArrayList<Integer> imagesListResourceId;
-    private int actorsArrayResourceId;
+    private ArrayList<Bitmap> imagesList;
+    private ArrayList<Integer> actorsArrayResourceId;
 
-    public Movie(String tittle, String category, Bitmap imageResource, ArrayList<Integer> imagesListResourceId, int actorsArrayResourceId){
+
+    public Movie(int id, String tittle, String category, Bitmap imageResource, ArrayList<Integer> actorsArrayResourceId){
+        this.id = id;
         this.tittle = tittle;
         this.category = category;
         this.imageResource = imageResource;
-        this.imagesListResourceId = imagesListResourceId;
         this.actorsArrayResourceId = actorsArrayResourceId;
-
     }
 
     public String getTittle() {
@@ -49,20 +51,24 @@ public class Movie {
         this.imageResource = imageResource;
     }
 
-    public ArrayList<Integer> getImagesListResourceId() {
-        return imagesListResourceId;
+    public ArrayList<Bitmap> getImagesListResourceId() {
+        return imagesList;
     }
 
-    public void setImagesListResourceId(ArrayList<Integer> imagesListResourceId) {
-        this.imagesListResourceId = imagesListResourceId;
+    public void setImagesListResourceId(ArrayList<Bitmap> imagesList) {
+        this.imagesList = imagesList;
     }
 
-    public int getActorsArrayResourceId() {
+    public ArrayList<Integer> getActorsArrayResourceId() {
         return actorsArrayResourceId;
     }
 
-    public void setActorsArrayResourceId(int actorsArrayResourceId) {
+    public void setActorsArrayResourceId(ArrayList<Integer> actorsArrayResourceId) {
         this.actorsArrayResourceId = actorsArrayResourceId;
+    }
+
+    public int getId() {
+        return id;
     }
 
 }
